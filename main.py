@@ -28,7 +28,7 @@ if args.__len__() == 3 and args[2] == "-F":
 
 if make_dirs == True:
     name = args[2]
-    if os.path.isfile("/home/seva/projects/python/mkproj/config.json") == False:
+    if os.path.isfile(config) == False:
         with open(config, "w") as file:
             file.write("{}")
     with open(config, "r") as file:
