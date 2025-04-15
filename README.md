@@ -5,35 +5,35 @@
 ```bash
 {your alias or different way to run script} -h / --help
 ```
-Показать краткую справку.
+Show a short help message.
 
 ```bash
 -{extension of file}
 ```
-Указывает расширение файла, которое будет добавлено в конец имени файла.  
-Если включено создание директорий, и расширение существует в `config.json`, также будет создана директория с соответствующим именем.
+Specifies the file extension to be added to the end of the file name.  
+If directory creation is enabled and the extension exists in `config.json`, a directory with the corresponding name will also be created.
 
 ```bash
 -F
 ```
-Отключает создание директорий. Файлы проекта будут созданы в директории, указанной в `projects_dir`.
+Disables directory creation. Project files will be created in the directory specified by `projects_dir`.
 
 ---
 
-## Settings (в `main.py`)
+## Settings (in `main.py`)
 
-- `projects_dir` — путь к директории, где будут храниться проекты.  
-  Если создание директорий отключено, файлы будут созданы в этой директории.  
-  В противном случае будет создана поддиректория для расширения.
-  
-- `config` — путь к файлу `config.json`.
+- `projects_dir` — path to the directory where projects will be stored.  
+  If directory creation is disabled, files will be created directly in this directory.  
+  Otherwise, a subdirectory based on the extension will be created.
+
+- `config` — path to the `config.json` file.
 
 ---
 
 ## config.json
 
-Файл конфигурации для создания директорий по расширениям.  
-Синтаксис:
+Configuration file for mapping file extensions to directories.  
+Syntax:
 
 ```json
 {
@@ -41,7 +41,7 @@
 }
 ```
 
-**Пример:**
+**Example:**
 
 ```json
 {
