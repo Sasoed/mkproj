@@ -48,3 +48,5 @@ if os.path.exists(file) == False:
         f.write("")
 else:
     print("File exist")
+    sys.exit()
+print(f"File was created in {file}")
