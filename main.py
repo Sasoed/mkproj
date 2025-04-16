@@ -49,4 +49,4 @@ if os.path.exists(file) == False:
 else:
     print("File exist")
     sys.exit()
-print(f"File was created in {file}")
+print(file)
